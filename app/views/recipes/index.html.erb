@@ -1,0 +1,7 @@
+<h2>Meimi Recipes</h2>
+<h5 class="mb-5"><%= link_to 'new', new_recipe_path %></h5>
+
+<% @recipes.each do |r| %>
+  <h4 class="my-3"><%= link_to r.name, recipe_path(r) %></h4>
+<% end %>
+

@@ -1,0 +1,7 @@
+<h2>Create a new recipe</h2>
+
+<%= simple_form_for(@recipe) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>
